@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với Giáo Xứ Bà Trà">
+    <title>Liên Hệ - Giáo Xứ Bà Trà</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✝</span>
+                        <span class="logo-text">Giáo Xứ Bà Trà</span>
+                    </a>
+                    
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                        <li><a href="about.html" class="nav-link">Giới Thiệu</a></li>
+                        <li><a href="index.html#schedule" class="nav-link">Lịch Lễ</a></li>
+                        <li><a href="index.html#news" class="nav-link">Tin Tức</a></li>
+                        <li><a href="contact.html" class="nav-link active">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">Liên Hệ Với Chúng Tôi</h1>
+            <p class="page-subtitle">Chúng tôi luôn sẵn sàng lắng nghe và đồng hành cùng bạn</p>
+        </div>
+    </section>
+
+    <!-- CONTACT MAIN -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrapper">
+                    <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+                    <p class="form-description">Vui lòng điền thông tin vào form dưới đây. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Nhập họ tên của bạn">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="example@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Số Điện Thoại</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0123 456 789">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Chủ Đề <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Chọn chủ đề --</option>
+                                <option value="general">Thắc mắc chung</option>
+                                <option value="mass">Lịch lễ</option>
+                                <option value="baptism">Rửa tội</option>
+                                <option value="marriage">Hôn phối</option>
+                                <option value="charity">Từ thiện</option>
+                                <option value="volunteer">Tình nguyện</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Nội Dung <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Nhập nội dung tin nhắn của bạn..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span class="btn-text">Gửi Tin Nhắn</span>
+                            <span class="btn-icon">📧</span>
+                        </button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+                
+                <!-- CONTACT INFO -->
+                <div class="contact-info-wrapper">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Địa Chỉ</h3>
+                            <p>Xã Bà Trà, Huyện Phú Ninh<br>Tỉnh Quảng Nam, Việt Nam</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Điện Thoại</h3>
+                            <p><a href="tel:+842351234567">(84) 235 123 4567</a></p>
+                            <p class="info-note">Thứ 2 - Chủ nhật: 8:00 - 17:00</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:giaoxubatra@gmail.com">giaoxubatra@gmail.com</a></p>
+                            <p class="info-note">Phản hồi trong 24 giờ</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">⏰</div>
+                            <h3>Giờ Làm Việc</h3>
+                            <p>Thứ Hai - Thứ Sáu: 8:00 - 11:30, 13:30 - 17:00</p>
+                            <p>Thứ Bảy - Chủ Nhật: 8:00 - 11:30</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Kết Nối Với Chúng Tôi</h3>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn facebook">
+                                <span class="social-icon">📘</span>
+                                <span class="social-name">Facebook</span>
+                            </a>
+                            <a href="#" class="social-btn youtube">
+                                <span class="social-icon">📺</span>
+                                <span class="social-name">YouTube</span>
+                            </a>
+                            <a href="#" class="social-btn instagram">
+                                <span class="social-icon">📷</span>
+                                <span class="social-name">Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Bản Đồ Chỉ Đường</h2>
+            <div class="map-wrapper">
+                <div class="map-placeholder">
+                    <div class="map-icon">🗺️</div>
+                    <p>Xã Bà Trà, Huyện Phú Ninh, Tỉnh Quảng Nam</p>
+                    <p class="map-note">Nhấn vào nút bên dưới để xem bản đồ chi tiết</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">
+                        Mở Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+                <p class="section-subtitle">Những câu hỏi phổ biến từ cộng đoàn</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Giờ Thánh lễ Chủ Nhật là mấy giờ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Thánh lễ Chủ Nhật được cử hành vào các giờ: 5:00, 7:00, 9:00 và 16:00. Anh chị em có thể tham dự thánh lễ vào bất kỳ giờ nào thuận tiện.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Làm thế nào để đăng ký rửa tội?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Để đăng ký rửa tội, anh chị em vui lòng liên hệ trực tiếp với Nhà xứ trong giờ làm việc hoặc gặp Cha Sở sau Thánh lễ Chủ Nhật. Cần chuẩn bị các giấy tờ: Giấy khai sinh, giấy tờ tùy thân của cha mẹ và cha mẹ đỡ đầu.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tôi có thể tham gia đoàn thể nào trong Giáo xứ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Giáo xứ có nhiều đoàn thể: Đoàn Gia đình, Giới trẻ, Thiếu nhi, Ca đoàn, Caritas, Nhóm Kinh Thánh... Anh chị em có thể liên hệ với trưởng các đoàn thể sau Thánh lễ hoặc gọi điện về Nhà xứ để được hướng dẫn.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Làm sao để đăng ký hôn phối?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Vui lòng liên hệ với Cha Sở ít nhất 6 tháng trước ngày cử hành để đăng ký và tham gia khóa chuẩn bị hôn nhân. Cần chuẩn bị: Giấy chứng nhận rửa tội, giấy tờ tùy thân, và các giấy tờ theo quy định của Giáo hội.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Tôi muốn tham gia hoạt động từ thiện, làm thế nào?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Rất vui được đón nhận sự nhiệt tình của anh chị! Vui lòng liên hệ với Ban Caritas của Giáo xứ qua số điện thoại Nhà xứ hoặc tìm gặp trưởng Ban Caritas sau Thánh lễ Chủ Nhật.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Về Chúng Tôi</h3>
+                    <p>Giáo Xứ Bà Trà là cộng đoàn Công giáo với truyền thống lâu đời, luôn hướng đến việc xây dựng đức tin và phục vụ cộng đoàn.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên Kết Nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="about.html">Giới Thiệu</a></li>
+                        <li><a href="index.html#schedule">Lịch Lễ</a></li>
+                        <li><a href="index.html#news">Tin Tức</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Giờ Lễ</h3>
+                    <ul>
+                        <li>Thứ Hai - Sáu: 5:30</li>
+                        <li>Thứ Bảy: 5:30 & 18:00</li>
+                        <li>Chủ Nhật: 5:00 | 7:00 | 9:00 | 16:00</li>
+                        <li>Chầu Thánh Thể: Thứ Sáu 19:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên Hệ</h3>
+                    <ul>
+                        <li>📍 Xã Bà Trà, Phú Ninh, Quảng Nam</li>
+                        <li>📞 (84) 235 123 4567</li>
+                        <li>✉️ giaoxubatra@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Giáo Xứ Bà Trà. Tất cả quyền được bảo lưu.</p>
+                <p>Được xây dựng với ❤️ và đức tin</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
